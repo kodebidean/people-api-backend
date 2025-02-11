@@ -1,0 +1,55 @@
+# Archivos de ayuda y directorios de compilación
+HELP.md
+target/
+build/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Archivos sensibles y credenciales
+.env
+application.properties
+application.yml
+application-dev.properties
+application-prod.properties
+
+### STS (Spring Tool Suite) ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans/
+.sts4-cache/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Eclipse ###
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*.swo
+*.log
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# Archivos de sistema y logs
+.DS_Store
+Thumbs.db
+*.log
+nohup.out
