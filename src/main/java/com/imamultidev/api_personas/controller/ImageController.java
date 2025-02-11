@@ -28,7 +28,8 @@ public class ImageController {
 
     @PostMapping("/upload")
     public ResponseEntity<Image> uploadImage(@RequestParam("file") MultipartFile file) throws IOException {
-        Map<String, Object> uploadResult = cloudinaryService.uploadImage(file);        String url = (String) uploadResult.get("secure_url");
+        Map<String, Object> uploadResult = cloudinaryService.uploadImage(file);        
+        String url = (String) uploadResult.get("secure_url");
         String publicId = (String) uploadResult.get("public_id");
 
         Image image = new Image();
