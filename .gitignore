@@ -7,8 +7,6 @@ build/
 
 # Archivos sensibles y credenciales
 .env
-application.properties
-application.yml
 application-dev.properties
 application-prod.properties
 
